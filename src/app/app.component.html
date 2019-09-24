@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <span> <h1>Employee Management System </h1> </span>
+</mat-toolbar>
+
+
+<br><br>
+        <input [(ngModel)]="emp_id" type="text" name="id" id="" placeholder="Enter id">
+        <input [(ngModel)]="emp_name" type="text" name="name" id="" placeholder="Enter name">
+        <input [(ngModel)]="emp_dept" type="text" name="dept" id="" placeholder="Enter department">
+
+<button mat-raised-button color="primary" (click)="addEmployee()">ADD</button>
+<app-employee-detail></app-employee-detail>
+<app-employee-list></app-employee-list> 
